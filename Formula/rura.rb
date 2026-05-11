@@ -5,21 +5,21 @@ class Rura < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/tlipinski/rura/releases/download/v1.0.0/rura-aarch64-apple-darwin.tar.xz"
-      sha256 "3400deff2adc2caa1ded534e3e973d69d05e37e8425b11adeafba45f911a7cfc"
+      sha256 "c937efe7d80f7fd8d50f094b395a3c47dfd31b2ffdffe6aa25b431b74132cd49"
     end
     if Hardware::CPU.intel?
       url "https://github.com/tlipinski/rura/releases/download/v1.0.0/rura-x86_64-apple-darwin.tar.xz"
-      sha256 "3aeeed7c6facdec312bd33b9364580669edb02297948a04c2a085561c63632ca"
+      sha256 "4167f8eb9b78fe66f25f8a798bea44c4b23d311564eb15401e2e8a3e5e2e9867"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/tlipinski/rura/releases/download/v1.0.0/rura-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a64ff4342711397df9fcba91cadf10c5b39009445efe0c6aa52815a2c6e20e57"
+      sha256 "308ad6e323632b507f8d4add995c3696f623c3e99dca85e0c29c9e8347685d65"
     end
     if Hardware::CPU.intel?
       url "https://github.com/tlipinski/rura/releases/download/v1.0.0/rura-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "06e383cd02d59e758e9ae16be42471793a08f178b8e8bc9063aaf681d40f2259"
+      sha256 "a5d95b8ef3beb9506faf7ce8afaa4bd54cd47114710f62a008512fbedb5e93a5"
     end
   end
   license "MIT"
