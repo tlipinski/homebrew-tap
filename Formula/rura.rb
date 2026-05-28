@@ -1,34 +1,36 @@
 class Rura < Formula
   desc "Interactive TUI pipeline editor built for rapid iteration"
   homepage "https://github.com/tlipinski/rura"
-  version "1.2.0"
+  version "1.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tlipinski/rura/releases/download/v1.2.0/rura-aarch64-apple-darwin.tar.xz"
-      sha256 "27ca7ecef4aad2491f003cd65ece28346a116b0adf3cd99b30b6234579afc1c1"
+      url "https://github.com/tlipinski/rura/releases/download/v1.3.0/rura-aarch64-apple-darwin.tar.xz"
+      sha256 "77d5d9ee87749097fec362cd7af253146eb3edbd047de513bbfdc2cc7acda7fc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tlipinski/rura/releases/download/v1.2.0/rura-x86_64-apple-darwin.tar.xz"
-      sha256 "7688cdf4b656caff562d604da2b49d3fa1b35ac60c6f6b3391bb5d4e59fe0a2a"
+      url "https://github.com/tlipinski/rura/releases/download/v1.3.0/rura-x86_64-apple-darwin.tar.xz"
+      sha256 "d1dbcfd2335e8c52cde9f4fdc5151edaaa38155844d3ee83eee11007964f80c0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/tlipinski/rura/releases/download/v1.2.0/rura-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "b4a65f24a551f0c1be74cc6693010d2ddaab5c7a0f8a2d681bac94df57e7b873"
+      url "https://github.com/tlipinski/rura/releases/download/v1.3.0/rura-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "af144c10dc672443a93045f407032524bb99ea86108631d45c015ae0df450848"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tlipinski/rura/releases/download/v1.2.0/rura-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "bde58c5058f81b18821c2146052904f063b1433d5fbde92aff26a7f3a5394178"
+      url "https://github.com/tlipinski/rura/releases/download/v1.3.0/rura-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "bbcb2f2bc8981d23e6f04495b2838ed5c2fabc8e35015007e17d89d7a0caa7d9"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin":      {},
-    "aarch64-unknown-linux-gnu": {},
-    "x86_64-apple-darwin":       {},
-    "x86_64-unknown-linux-gnu":  {},
+    "aarch64-apple-darwin":              {},
+    "aarch64-unknown-linux-gnu":         {},
+    "x86_64-apple-darwin":               {},
+    "x86_64-unknown-linux-gnu":          {},
+    "x86_64-unknown-linux-musl-dynamic": {},
+    "x86_64-unknown-linux-musl-static":  {},
   }.freeze
 
   def target_triple
