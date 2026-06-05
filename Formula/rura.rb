@@ -1,33 +1,35 @@
 class Rura < Formula
   desc "Interactive TUI pipeline editor built for rapid iteration"
   homepage "https://github.com/tlipinski/rura"
-  version "1.4.0"
+  version "1.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tlipinski/rura/releases/download/v1.4.0/rura-aarch64-apple-darwin.tar.xz"
-      sha256 "4d0bb7be126bc0833a086c7f74d5a435efb0fbb05cdb7019a5f64080df6be1a3"
+      url "https://github.com/tlipinski/rura/releases/download/v1.5.0/rura-aarch64-apple-darwin.tar.xz"
+      sha256 "8cec349c3a6ab4c9ce60d5b7b126e4b368d52de60712935c51def126b8940536"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tlipinski/rura/releases/download/v1.4.0/rura-x86_64-apple-darwin.tar.xz"
-      sha256 "03442e9d1bedf3e830057b5d1076a580f5570a88b089423d23daee1998e5139d"
+      url "https://github.com/tlipinski/rura/releases/download/v1.5.0/rura-x86_64-apple-darwin.tar.xz"
+      sha256 "743ad008425766c2a1e671f96a2cc682666c2cb8dbc688e6c46bd9ed6b6dbc06"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/tlipinski/rura/releases/download/v1.4.0/rura-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "29224c6d643c01a4e8da21d49420c5f25a9d694c0dfb2e76a80bc3c6f9a62c3a"
+      url "https://github.com/tlipinski/rura/releases/download/v1.5.0/rura-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "0c12700c7af7f722001b714fcd1a5c27c35adde2a2152b7250d202f54a9e1c82"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tlipinski/rura/releases/download/v1.4.0/rura-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c1fb606d71551d329dccb837f538bb284ed249c6fa82afa9d93d2100d6b324e9"
+      url "https://github.com/tlipinski/rura/releases/download/v1.5.0/rura-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "78d803ceec38580ed8b962b7583beb91b612c085b498faa0219c6cd5b648b0da"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":              {},
+    "aarch64-pc-windows-gnu":            {},
     "aarch64-unknown-linux-gnu":         {},
     "x86_64-apple-darwin":               {},
+    "x86_64-pc-windows-gnu":             {},
     "x86_64-unknown-linux-gnu":          {},
     "x86_64-unknown-linux-musl-dynamic": {},
     "x86_64-unknown-linux-musl-static":  {},
