@@ -1,25 +1,25 @@
 class Rura < Formula
   desc "Interactive TUI pipeline editor built for rapid iteration"
   homepage "https://github.com/tlipinski/rura"
-  version "1.5.0"
+  version "1.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/tlipinski/rura/releases/download/v1.5.0/rura-aarch64-apple-darwin.tar.xz"
-      sha256 "8cec349c3a6ab4c9ce60d5b7b126e4b368d52de60712935c51def126b8940536"
+      url "https://github.com/tlipinski/rura/releases/download/v1.6.0/rura-aarch64-apple-darwin.tar.xz"
+      sha256 "f8a59d527a6ab760eaeeb4f09ae0ac0130818a67e63db140298edd2ceb4ce21f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tlipinski/rura/releases/download/v1.5.0/rura-x86_64-apple-darwin.tar.xz"
-      sha256 "743ad008425766c2a1e671f96a2cc682666c2cb8dbc688e6c46bd9ed6b6dbc06"
+      url "https://github.com/tlipinski/rura/releases/download/v1.6.0/rura-x86_64-apple-darwin.tar.xz"
+      sha256 "0d7703f11e9401cfb8084cb3a5d214ea91d092d0b5af5d2e26cb74b9d241c4f6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/tlipinski/rura/releases/download/v1.5.0/rura-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0c12700c7af7f722001b714fcd1a5c27c35adde2a2152b7250d202f54a9e1c82"
+      url "https://github.com/tlipinski/rura/releases/download/v1.6.0/rura-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "08676a558ca20f82bff0f2fcf52de08bca585eadf2a02c702035aa505a356e19"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/tlipinski/rura/releases/download/v1.5.0/rura-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "78d803ceec38580ed8b962b7583beb91b612c085b498faa0219c6cd5b648b0da"
+      url "https://github.com/tlipinski/rura/releases/download/v1.6.0/rura-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b907656b0b222c6e85e8d04bd620d127f2601557cb43be8a9c91b4d96750d56c"
     end
   end
   license "MIT"
